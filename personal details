@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class PersonalDetails {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your firstname: ");
+        String firstname = sc.nextLine();
+        System.out.print("Enter your lastname: ");
+        String lastname = sc.nextLine();
+        System.out.print("Enter your rollno: ");
+        short rollno = sc.nextShort();
+        System.out.print("Enter your height: ");
+        float height = sc.nextFloat();
+        System.out.print("Enter your weight: ");
+        double weight = sc.nextDouble();
+        System.out.print("Enter your mobileno: ");
+        long mobileno = sc.nextLong(); 
+        System.out.print("Enter your PIN code: ");
+        int pinCode = sc.nextInt();
+        System.out.print("Enter your age: ");
+        byte age = sc.nextByte();
+        sc.nextLine(); 
+        System.out.print("Enter your gender (M/F): ");
+        char gender = sc.nextLine().charAt(0);
+        System.out.print("Are you a student? (true/false): ");
+        boolean isStudent = sc.nextBoolean();
+        System.out.println("\n--- Personal Details ---");
+        System.out.println("FirstName: " + firstname);
+        System.out.println("LastName: " + lastname);
+        System.out.println("RollNo: " + rollno);
+        System.out.println("Height: " + height);
+        System.out.println("Weight: " + weight);
+        System.out.println("MobileNo: " + mobileno);
+        System.out.println("PIN Code: " + pinCode);
+        System.out.println("Age: " + age);
+        System.out.println("Gender: " + gender);
+        System.out.println("Student: " + isStudent);
+        sc.close();
+    }
+}
