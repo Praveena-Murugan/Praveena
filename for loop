@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class CountForLoop {
+    public static void main(String[] args) {
+       Scanner scanner=new scanner(System.in);
+        for (int count = 1; count <= 10; count++){
+                System.out.println(count);
+        }
+    }
+}
