@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter the SN: ");
+        int SN=scanner.nextInt();
+        System.out.print("Enter the EN: ");
+        int EN=scanner.nextInt();
+        double random=SN+(Math.random()*((SN+EN)+1));
+        System.out.println(random);
+    }
+}
+
+OUTPUT:
+Enter the SN: 20
+Enter the EN: 30
+21.77920899216259
+
+INPUT:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        if (num <= 0) {
+            System.out.println(num + " is an Ugly Number.");
+            scanner.close();
+            return;
+        }
+        while (num % 2 == 0) {
+            num /= 2;
+        }
+        while (num % 3 == 0) {
+            num /= 3;
+        }
+        while (num % 5 == 0) {
+            num /= 5;
+        }
+        if (num == 1) {
+            System.out.println("UGLY Number");
+        } else {
+            System.out.println(" STRONG Number");
+        }
+        scanner.close();
+    }
+}
+
+OUTPUT:
+Enter a number: 21
+21 is NOT an Ugly Number.
+
+
