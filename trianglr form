@@ -1,0 +1,200 @@
+public class Main {
+    public static void main(String[] args) {
+        int n = 4;
+        for (int i = 1; i <= n; i++) {
+            for (int s = 1; s <= n - i; s++) {
+                System.out.print("  ");
+            }
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+        for (int i = 4; i >= 1; i--) {
+            for (int s = 1; s <= n - i; s++) {
+                System.out.print("  ");
+            }
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+OUTPUT:
+      1 
+    2 1 2 
+  3 2 1 2 3 
+4 3 2 1 2 3 4 
+4 3 2 1 2 3 4 
+  3 2 1 2 3 
+    2 1 2 
+      1 
+
+INPUT:
+public class Main {
+    public static void main(String[] args) {
+        int n = 4;  
+        for (int i = 1; i <= n; i++) {
+            for (int s = 1; s <= n - i; s++) {
+                System.out.print("  "); 
+            }
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT:
+      1 
+    2 1 2 
+  3 2 1 2 3 
+4 3 2 1 2 3 4 
+
+
+INPUT:
+public class DoublePyramid {
+    public static void main(String[] args) {
+        int n=6; 
+        for (int i=1;i<=n;i++)
+        {
+            for (int j=1;j<=n-i;j++) 
+            {
+                System.out.print(" ");
+            }
+            for (int k=1;k<=i;k++) 
+            {
+                System.out.print("* ");
+            }
+
+            for (int j=1;j<=(n-i)*2;j++) 
+            {
+                System.out.print(" ");
+            }
+
+            for (int k=1;k<=i;k++) 
+            {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT:
+     *            *
+    * *          * *
+   * * *        * * *
+  * * * *      * * * *
+ * * * * *    * * * * *
+* * * * * *  * * * * * *
+
+
+INPUT:
+public class Main{
+    public static void main(String[] args) {
+        int n=6; 
+        for (int i=1;i<=n;i++) {
+            for (int j=1;j<=n-i;j++)  {
+                System.out.print(" ");
+            }
+            for (int k=1;k<=i;k++) {
+                System.out.print("* ");
+            }
+            for (int j=1;j<=(n-i)*2;j++) {
+                System.out.print(" ");
+            }
+            for (int k=1;k<=i;k++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+        for (int i=6;i<=n;i--){
+            for (int j=1;j<=n-i;j++) {
+                System.out.print(" ");
+            }
+            for (int k=1;k<=i;k++) {
+                System.out.print("* ");
+            }
+            for (int j=1;j<=(n-i)*2;j++) {
+                System.out.print(" ");
+            }
+            for (int k=1;k<=i;k++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+}
+
+OUTPUT:
+     *            *
+    * *          * *
+   * * *        * * *
+  * * * *      * * * *
+ * * * * *    * * * * *
+* * * * * *  * * * * * *
+* * * * * *  * * * * * *
+ * * * * *    * * * * *
+  * * * *      * * * *
+   * * *        * * *
+    * *          * *
+     *            *
+
+
+INPUT:
+
+                  
+                     
+                        
+                           
+                              
+                                 
+                                    
+                                       
+                                          
+                                             
+                                                
+                                                   
+                                                      
+                                                         
+                                                            
+                                                               
+                                                                  
+                                                                     
+                                                                        
+                                                                           
+                                                                              
+                                                                                 
+                                                                                    
+                                                                                       
+                                                                                          
+                                                                                             
+                                                                                                
+                                                                                                   
+                                                                                                      
+                                                                                                         
+                                                                                                            
+                                                                                                               
+                                                                                                                  
+                                                                                                                     
+                                                                                                                        
+                                                                                                                           
+                                                                                                                              
+                                                                                                                                 
+                                                                                                                                    
+                                                                                                                                       
+                                
+
+
