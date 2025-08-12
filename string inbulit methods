@@ -1,0 +1,243 @@
+Program:[CharAt(),CodePointAt(),CodePointBefore()]
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner x = new Scanner(System.in);
+	    System.out.println("Enter your String:");
+	    String n=x.nextLine();
+	    char mystr= n.charAt(0);
+		System.out.println(mystr);
+	    int my= n.codePointAt(3);
+		System.out.println(my);
+		int m =n.codePointBefore(8);
+		System.out.println(m);
+		}
+}
+OUTPUT:
+Enter your String:
+Praveena
+P
+118
+97
+
+PROGRAM:[CodePointCount(),CompareTo()]
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter any String1:");
+        String str1 = x.nextLine();
+        System.out.println("Enter any String2:");
+        String str2 = x.nextLine();
+        int mystr = str1.codePointCount(0, str1.length());
+        System.out.println(mystr);
+        int my = str1.compareTo(str2);
+        System.out.println(my);
+    }
+}
+OUTPUT:
+Enter any String1:
+Praveena
+Enter any String2:
+Asmitha
+8
+15
+
+PROGRAM:[CompareToIgnoreCase(),Concat()]
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter any String1:");
+        String str1 = x.nextLine();
+        System.out.println("Enter any String2:");
+        String str2 = x.nextLine();
+        int my = str1.compareToIgnoreCase(str2);
+        System.out.println(my);
+        String mystr = str1.concat(str2);
+        System.out.println(mystr);
+    }
+}
+OUTPUT:
+Enter any String1:
+Praveena
+Enter any String2:
+Murugan
+3
+PraveenaMurugan
+
+PROGRAM:[Contains()]
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter any String1:");
+        String str1 = x.nextLine();
+        boolean my = str1.contains("Praveena");
+        System.out.println(my);
+        boolean mystr = str1.contentEquals("Praveena");
+        System.out.println(mystr);
+    }
+}
+OUTPUT:
+Enter any String1:
+Praveena
+true
+true
+
+PROGRAM:[CopyValueOf()]
+public class Main {
+    public static void main(String[] args) {
+        char[] data = {'P','R','A','V','E','E'};
+        String str = String.copyValueOf(data, 0, 6);
+        System.out.println(str);
+        System.out.println(str.endsWith("P"));
+    }
+}
+OUTPUT:
+PRAVEE
+false
+
+PROGRAM:[EndsWith()]
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of characters: ");
+        int n = sc.nextInt();
+        char[] data = new char[n];
+        System.out.println("Enter characters:");
+        for (int i = 0; i < n; i++) {
+            data[i] = sc.next().charAt(0);
+        }
+        String str = String.copyValueOf(data, 0, n);
+        System.out.println("The string is: " + str);
+        System.out.println(str.endsWith("a"));
+    }
+}
+
+OUTPUT:
+Enter number of characters: 8
+Enter characters:
+p
+r
+a
+v
+e
+e
+n
+a
+The string is: praveena
+true
+
+PROGRAM:[EqualsIgnoreCase()]
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String data = "hello";
+        String hi = "hi %s my age n %d";
+        System.out.println(data.equalsIgnoreCase("hello"));
+    }
+}
+OUTPUT:
+true
+
+PROGRAM:[Format()]
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String data = "hello";
+        String hi = "hi %s my age  is %d";
+        System.out.println(data.equalsIgnoreCase("hello"));
+        System.out.printf(hi, "hello", 20);
+    }
+}
+OUTPUT:
+true
+hi hello my age  is 20
+
+PROGRAM:[GetCharater()]
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        char[] data = {'9','2','1','5'};
+        System.out.print(data);
+        String myString = "Praveena";
+        myString.getChars(8, 8, data,0 );  
+        System.out.print(myString);
+    }
+}
+OUTPUT:
+9215Praveena
+
+PROGRAM:[hashcode()]
+public class Main {
+    public static void main(String[] args) {
+        String name="praveena";
+        byte[] arr=name.getBytes();
+        System.out.print(name.hashCode());
+    }
+}
+OUTPUT:
+-1388420982
+
+PROGRAM:[ToUpperCase()]
+public class Main {
+    public static void main(String[] args) {
+        String name="Praveena";
+        System.out.print(name.toUpperCase());
+    }
+}
+OUTPUT:
+PRAVEENA
+
+PROGRAM:[ToLowerCase()]
+public class Main {
+    public static void main(String[] args) {
+        String name="Praveena";
+        System.out.print(name.toLowerCase());
+    }
+}
+OUTPUT:
+praveena
+
+PROGRAM:[indexof()]
+public class Main {
+    public static void main(String[] args) {
+        String name="praveena agal";
+        System.out.print(name.indexOf("agal"));
+    }
+}
+OUTPUT:
+9
+
+PROGRAM:[isEmpty()]
+public class Main {
+    public static void main(String[] args) {
+        String name="Hello World";
+        String names="";
+        System.out.println(name.isEmpty());
+        System.out.println(names.isEmpty());
+    }
+}
+OUTPUT:
+false
+true
+
+PROGRAM:[join()]
+public class Main {
+    public static void main(String[] args) {
+        String name=String.join(" ","Praveena","Murugan");
+        System.out.println(name);
+    }
+}
+OUTPUT:
+Praveena Murugan
+
+
+
+
+
+
+
+
