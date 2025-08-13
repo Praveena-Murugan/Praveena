@@ -234,6 +234,127 @@ public class Main {
 OUTPUT:
 Praveena Murugan
 
+PROGRAM:[matches()]
+public class Main {
+    public static void main(String[] args) {
+        String a="Hello praveena";
+        String b="World asmi";
+        String x = "praveena|asmi|jayasri";
+        System.out.println("praveena".matches(x));
+        System.out.println("Asmi".matches(x));
+        System.out.println("Java".matches(x));
+        System.out.println(a.regionMatches(7,a,4,5));
+    }
+}
+OUTPUT:
+true
+false
+false
+false
+
+PROGRAM:[replaceAll()]
+public class Main {
+    public static void main(String[] args) {
+        String a="Hello";
+        String b="Hello Praveena Hello";
+        System.out.println(a.replace('1','p'));
+        String x="(?i)Hello";
+        System.out.println(b.replaceAll(x,"Hi"));
+        String y="Hello";
+        System.out.println(b.replaceFirst(y,"Hi"));
+    }
+}
+OUTPUT:
+Hello
+Hi Praveena Hi
+Hi Praveena Hello
+
+PROGRAM:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String x = sc.nextLine();
+        String y = "[\\.\\s]";
+        String[] z = x.split(y);
+        for (String s : z) {
+            System.out.println(s);
+        }
+
+        sc.close();
+    }
+}
+OUTPUT:
+Enter a string: Hello World
+Hello
+World
+
+PROGRAM:
+class Main {
+    public static void main(String[] args) {
+        String x = "Hello";
+        System.out.println(x.startsWith("Hello"));
+        System.out.println(x.startsWith("World"));
+    }
+}
+OUTPUT:
+true
+false
+
+PROGRAM:[toCharArray()]
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter a string: ");
+        String x = scanner.nextLine();          
+        char[] y = x.toCharArray();
+        for (int i = 0; i < y.length; i++) {
+            System.out.print(y[i]);               
+        }
+        
+        scanner.close();  
+    }
+}
+OUTPUT:
+Enter a string: praveena
+praveena
+
+PROGRAM:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter a string: ");
+        String x = scanner.nextLine();          
+            System.out.println(x.toUpperCase());       
+            System.out.println(x.toLowerCase());       
+        }
+    }
+OUTPUT:
+Enter a string: praveena
+PRAVEENA
+praveena
+
+PROGRAM:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter a string: ");
+        String x = scanner.nextLine();          
+            System.out.println(x); 
+            System.out.println(x.trim()); 
+            System.out.println(String.valueOf(x));    
+                 
+        }
+    }
+
+
+
+
+
 
 
 
